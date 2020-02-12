@@ -77,7 +77,7 @@ function About() {
             <img
               className={classes.aboutImage2}
               src={uncc}
-              alt="University"
+              alt="UNCC"
             ></img>
           </div>
         </div>
