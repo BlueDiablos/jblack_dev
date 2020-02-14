@@ -46,7 +46,7 @@ function About() {
               <p>
                 From Texas to Kentucky; Louisiana to Arizona and onward to North
                 Carolina. Growing up in an ever changing environment impacted
-                who I am today: Resilient, strong-willed open minded and humble.
+                who I am today: Resilient and open minded.
               </p>
             </h1>
             <img
@@ -138,7 +138,7 @@ const useStyles = makeStyles(theme => ({
   line: {
     position: "relative",
     margin: "0",
-    fontSize: "300%",
+    fontSize: "600%",
     color: "#ffff",
     letterSpacing: "10px"
   },
@@ -149,7 +149,7 @@ const useStyles = makeStyles(theme => ({
     textAlign: "right",
     fontSize: "200%",
     color: "#1b1b1b",
-    letterSpacing: "10px"
+    letterSpacing: "5px"
   },
   tag2: {
     position: "left",
@@ -157,7 +157,7 @@ const useStyles = makeStyles(theme => ({
     textAlign: "right",
     fontSize: "200%",
     color: "#ffff",
-    letterSpacing: "10px"
+    letterSpacing: "5px"
   },
   outline: {
     boxShadow: "0 10px 20px #1b1b1b, 0 6px 6px #1b1b1b"

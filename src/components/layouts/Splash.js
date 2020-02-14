@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles, Hidden } from '@material-ui/core/';
 import {RemoveScrollBar} from 'react-remove-scroll-bar';
-
+import Chart from '../dashboard/Chart';
 
 
 function Splash () {
@@ -9,6 +9,7 @@ function Splash () {
   return (
     <div className={classes.App}>
     <RemoveScrollBar></RemoveScrollBar>
+   
       <div className={classes.wrapper}>
         <div className={classes.outline}>
           <div className={classes.hero}>

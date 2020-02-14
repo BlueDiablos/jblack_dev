@@ -32,7 +32,7 @@ const Navbar = () => {
 
 const useStyles = makeStyles(theme => ({
     aesthetic: {
-        letterSpacing:"5px",
+        letterSpacing:"2px",
         color: "#ffff",
         fontWeight: "bolder",   
     }
