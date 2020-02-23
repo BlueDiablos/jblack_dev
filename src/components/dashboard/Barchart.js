@@ -9,44 +9,23 @@ class Barchart extends Component{
        super(props);
        this.state = {
            chartData:{
-                labels: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+                labels: ['Total'],
                 datasets: [
                     {
                         label: 'Project Count',
                         data:[
-                           2,
-                           4,
-                           4,
-                           4,
-                           5,
-                           5,
-                           6,
-                           6,
-                           7,
-                           8,
-                           10,
-                           12
+                            12
                         ],
                         backgroundColor:[
                             'rgba(255,99,132,0.6)',
-                            'rgba(255,99,132,0.6)',
-                            'rgba(255,99,132,0.6)',
-                            'rgba(255,99,132,0.6)',
-                            'rgba(255,99,132,0.6)',
-                            'rgba(255,99,132,0.6)',
-                            'rgba(255,99,132,0.6)',
-                            'rgba(255,99,132,0.6)',
-                            'rgba(255,99,132,0.6)',
-                            'rgba(255,99,132,0.6)',
-                            'rgba(255,99,132,0.6)',
-                            'rgba(255,99,132,0.6)',
+                    
                            
                         ],
                         pointHoverBackgroundColor:[
-                            '#1b1b1b'
+                            '#fff'
                         ],
                         borderColor:[
-                            '#1b1b1b'
+                            '#fff'
                         ]
 
                         
@@ -79,16 +58,16 @@ class Barchart extends Component{
                     legend:{
                         display:true,
                         labels:{
-                            fontColor:"#1b1b1b"
+                            fontColor:"#ffff"
                         },
                         gridLines:{
-                            color:"#1b1b1b"
+                            color:"#fff"
                         }
                     },
                     scales:{
                         yAxes:[{
                             ticks:{
-                            fontColor:"#1b1b1b"
+                            fontColor:"#fff"
                             },
                             gridLines:{
                                 color:"transparent"
@@ -97,10 +76,10 @@ class Barchart extends Component{
                         }],
                         xAxes:[{
                             ticks:{
-                            fontColor:"#1b1b1b"
+                            fontColor:"#fff"
                             },
                             gridLines:{
-                                color:"transparent"
+                                color:"#fff"
                             }
                         }]
                     }

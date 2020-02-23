@@ -1,41 +1,56 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { NavLink } from "react-router-dom";
-import { makeStyles } from '@material-ui/core/';
+import React from 'react';
+import MenuIcon from '@material-ui/icons/Menu';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
+import IconButton from '@material-ui/core/IconButton'
 
 
-const Navbar = () => {
-    const classes = useStyles();
+
+
+function Navbar(){
+    
+  const classes = useStyles();
   return (
-    <nav className="nav-wrapper grey darken-3">
-      <div className="container">
-        <Link to="/" className="brand-logo">
-          {" "}
-          Jblack/>{" "}
-        </Link>
-        <ul className="right hide-on-med-and-down">
-          <li className={classes.aesthetic}>
-            <NavLink to="/project">Projects</NavLink>
-          </li>
-          <li className={classes.aesthetic}>
-            <NavLink to="/about">About</NavLink>
-          </li>
-          <li className={classes.aesthetic}>
-            <NavLink to="/dashboard">Dashboard</NavLink>
-          </li>
-          
-        </ul>
-      </div>
-    </nav>
+  <AppBar position="relative" className={classes.bar}>
+    <Toolbar>
+    <IconButton edge="center" className={classes.menuButton} color="inherit" aria-label="menu">
+    <MenuIcon className={classes.hamburger}>
+      <Typography>
+        Hello
+      </Typography>
+    </MenuIcon>
+    </IconButton>
+
+    <Typography variant="h4" className={classes.aesthetic}>
+      Jblack />
+    </Typography>
+   
+  </Toolbar>
+  </AppBar>
   );
+
 };
 
 const useStyles = makeStyles(theme => ({
     aesthetic: {
         letterSpacing:"2px",
         color: "#ffff",
-        fontWeight: "bolder",   
+        fontWeight: "bolder",
+        left:"50%",
+        right:"50%",
+        margin: "auto"
+    },
+    bar: {
+      backgroundColor: '#1b1b1b'
+    },
+    hamburger:{
+      fontSize:"30px"
+
+      
     }
+   
 }));
 
 export default Navbar;

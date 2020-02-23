@@ -8,18 +8,17 @@ function Dash() {
   return (
     <div className={classes.app}>
       <div className={classes.page}>
-      <h3 className={classes.headline}>Yearly GitHub Commits</h3>
+      <h3 className={classes.headline}>Yearly GitHub Stats</h3>
         <div className={classes.chart}>
           <Chart />
+        
         </div>
-      </div>
-      <div class={classes.scrolldown}></div>
-      <div className={classes.pageNext}>
-      <h3 className={classes.headlineNext}>Total Projects</h3>
-        <div className={classes.barchart}>
+        <div className={classes.bar}>
           <Barchart />
-        </div>
+          </div>
+        
       </div>
+    
     </div>
   );
 }
@@ -30,11 +29,17 @@ const useStyles = makeStyles(theme => ({
     font: "Myriad Set Pro"
   },
   chart: {
-    position: "absolute",
+    position: "relative",
     width: "50%",
-    left: "25%",
+    left: "15%",
     top: "40%",
     font: "Myriad Set Pro"
+  },
+  bar:{
+    position:"absolute",
+    width: "10%",
+    left: "70%",
+    top: "50%",
   },
   scrolldown: {
     position: "absolute",
@@ -55,13 +60,7 @@ const useStyles = makeStyles(theme => ({
     height: "100vh",
     backgroundColor: "#fff"
   },
-  barchart:{
-    position: "relative",
-    width: "50%",
-    left: "25%",
-    top: "40%",
-    font: "Myriad Set Pro"
-  },
+
   headline: {
     position: "relative",
     margin: "0",
