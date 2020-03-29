@@ -1,0 +1,25 @@
+#App{
+    background-color: #fff;
+    margin: 0;
+    font: 'Myriad Set Pro';
+}
+#hero{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#header{
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: 10px;
+    line-height: 58px;
+}
+#line{
+    position: relative;
+    top:50%;
+    text-align: center;
+    margin: 0;
+    font-size: 300%;
+    color: #1b1b1b;
+}

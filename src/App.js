@@ -1,28 +1,69 @@
 import React, {Component} from 'react';
-import {BrowserRouter, Switch, Route} from 'react-router-dom'
-import NavMenu from './components/layouts/Navbar'
-import Splash from './components/layouts/Splash'
-import About from './components/layouts/About';
-import Dash from './components/dashboard/Dash'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import { Container } from 'react-bootstrap';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+
+import Footer from './components/Footer';
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
 
 
 
 
-class App extends Component {
+class App extends React.Component {
+
+  constructor(props){
+    super(props);
+    this.state = {
+      title: "Joseph Blackledge",
+      headerLinks: [
+        {title: 'Home', path: '/'},
+        {title: 'About', path: '/about'},
+        {title: 'Contact', path: '/contact'},
+      ],
+
+      home: {
+        title: 'Be Ambitious',
+        sub: 'First Impressions Are Everything',
+        text: 'See my projects below'
+      },
+      about:{
+        title: "Who Am I"
+      },
+      contact:{
+        title: 'Reach out to me'
+      }
+    }
+  }
+
   render() {
     return(
-      <BrowserRouter>
-        <div style={{backgroundColor: "#1b1b1b"}}>
-        <NavMenu/>
-        <Switch>
-        <Route exact path ="/home" component={Splash}/>
-        <Route exact path ="/" component={Splash}/>
-        <Route path="/about" component={About}/>
-        <Route path="/dashboard" component={Dash}/>
-       </Switch>
-        </div>
-      </BrowserRouter>
+      <Router>
+      <Container className="p-0" fluid={true}>
+
+        <Navbar className="border-bottom" variant="light" bg="transparent" expand="lg">
+          <Navbar.Brand>Joseph Blackledge</Navbar.Brand>
+
+          <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
+          <Navbar.Collapse id="navbar-toggle">
+            <Nav className="ml-auto">
+              <Link className="nav-link" to="/">Home</Link>
+              <Link className="nav-link" to="/about">About</Link>
+              <Link className="nav-link" to="/contact">Contact</Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+
+        <Route path = "/" exact render={() => <HomePage title={this.state.home.title} sub={this.state.home.sub} text={this.state.home.text} />} />
+        <Route path = "/about" exact render={() => <AboutPage title={this.state.about.title} />} />
+        <Route path = "/contact" exact render={() => <ContactPage title={this.state.contact.title} />} />
+
+
+      <Footer/>
+      </Container>
+      </Router>
    
     )
   }
