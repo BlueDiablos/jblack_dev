@@ -34,7 +34,7 @@ const useStyles = makeStyles(theme => ({
   next: {
     height: "100vh",
     backgroundColor: "#ffff",
-    marginTop: "10%"
+    marginTop: "10%",
   },
 
   line: {
@@ -54,12 +54,14 @@ const useStyles = makeStyles(theme => ({
     fontSize: "250%",
     color: "#1b1b1b",
     letterSpacing: "5px",
-    height: "auto"
+    height: "auto",
+    paddingTop: "20px"
   },
 
   body: {
     width: "75%",
     marginLeft: "10%",
+    lineHeight: "2.5",
     textAlign: "left",
     float: "left",
     fontSize: "200%",
@@ -71,15 +73,7 @@ const useStyles = makeStyles(theme => ({
   outline: {
     boxShadow: "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)"
   },
-  aboutImage: {
-    boxShadow: "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)",
-    display: "block",
-    marginTop: "20%",
-    marginLeft: "auto",
-    marginRight: "auto",
-    width: "60%",
-    height: "auto"
-  }
+ 
 }));
 
 function About() {
@@ -90,9 +84,7 @@ function About() {
         <h3 className={classes.line}>"This one's gonna go for miles"</h3>
       </div>
       <div class={classes.scrolldown}></div>
-
       <div className={classes.outline}></div>
-
       <div className={classes.next}>
         <Col lg={12} md={12}>
           <h1 className={classes.tag}>Education.</h1>
@@ -104,19 +96,8 @@ function About() {
             understanding logic design; assembly and high level programming. It
             was also here, that I honed my skills as a developer with my peers.
             Gaining team building skills and lasting relationships.
-          </p>
-          <br></br>
-        </Col>
-        <Col lg={12} md={12} sm={1} xs={1}>
-          <Image className={classes.aboutImage} src={uncc} rounded />
-        </Col>
-      </div>
-
-      <div className={classes.outline}></div>
-
-      <div className={classes.next}>
-        <Col lg={12} md={12}>
-          <h1 className={classes.tag}>Skills.</h1>
+          </p><br></br>
+          <h1 className={classes.tag}>Experience.</h1>
           <p className={classes.body}>
             I'm a software developer who specializes in high level programming
             languages like Java, C#, Ruby, JavaScript and some of the web
@@ -127,10 +108,6 @@ function About() {
             frameworks and models (Agile, XP, Waterfall, Iterative ) that go
             along with it.
           </p>
-          <br></br>
-        </Col>
-        <Col lg={12} md={12} sm={1} xs={1}>
-        
         </Col>
       </div>
     </div>

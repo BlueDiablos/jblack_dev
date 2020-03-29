@@ -3,25 +3,7 @@ import { makeStyles } from "@material-ui/core/";
 import Chart from "./Chart";
 import Barchart from './Barchart';
 
-function Dash() {
-  const classes = useStyles();
-  return (
-    <div className={classes.app}>
-      <div className={classes.page}>
-      <h3 className={classes.headline}>Yearly GitHub Stats</h3>
-        <div className={classes.chart}>
-          <Chart />
-        
-        </div>
-        <div className={classes.bar}>
-          <Barchart />
-          </div>
-        
-      </div>
-    
-    </div>
-  );
-}
+
 const useStyles = makeStyles(theme => ({
   app: {
     margin: "0",
@@ -63,8 +45,8 @@ const useStyles = makeStyles(theme => ({
 
   headline: {
     position: "relative",
-    margin: "0",
-    left:"25%",
+    margin: "auto",
+   textAlign:"center",
     top: "10%",
     fontSize: "300%",
     color: "#ffff",
@@ -84,4 +66,24 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: "#1b1b1b"
   }
 }));
+
+function Dash() {
+  const classes = useStyles();
+  return (
+    <div className={classes.app}>
+      <div className={classes.page}>
+      <h3 className={classes.headline}>GitHub Stats </h3>
+        <div className={classes.chart}>
+        <Chart/>
+        </div>
+        <div className={classes.bar}>
+          <Barchart />
+          </div>
+        
+      </div>
+    
+    </div>
+  );
+}
+
 export default Dash;

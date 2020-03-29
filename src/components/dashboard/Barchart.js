@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import {Bar, Line, Pie} from 'react-chartjs-2';
+import {Bar} from 'react-chartjs-2';
 import axios from 'axios';
 
 
 
-class Barchart extends Component{
+export default class Barchart extends Component{
     constructor(props){
        super(props);
        this.state = {
@@ -14,7 +14,7 @@ class Barchart extends Component{
                     {
                         label: 'Project Count',
                         data:[
-                            12
+                            13
                         ],
                         backgroundColor:[
                             'rgba(255,99,132,0.6)',
@@ -34,14 +34,6 @@ class Barchart extends Component{
                 ]
            }
        }
-    }
-    componentDidMount() {
-        axios.get('https://api.github.com/repos/BlueDiablos/:repo/stats/commit_activity')
-        .then(res => {
-            const commits = res.data;
-            console.log(JSON.stringify(commits));
-            this.setState.chartData.data(commits);
-        })
     }
 
     render(){
@@ -92,5 +84,3 @@ class Barchart extends Component{
     }
     
 }
-
-export default Barchart;

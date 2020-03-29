@@ -3,7 +3,6 @@ import {Bar, Line, Pie} from 'react-chartjs-2';
 import axios from 'axios';
 
 
-
 class Chart extends Component{
     constructor(props){
        super(props);
@@ -45,14 +44,7 @@ class Chart extends Component{
            }
        }
     }
-    componentDidMount() {
-        axios.get('https://api.github.com/repos/BlueDiablos/:repo/stats/commit_activity')
-        .then(res => {
-            const commits = res.data;
-            console.log(JSON.stringify(commits));
-            this.setState.chartData.data(commits);
-        })
-    }
+ 
 
     render(){
         return(
