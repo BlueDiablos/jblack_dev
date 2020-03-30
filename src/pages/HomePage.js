@@ -1,20 +1,19 @@
 import React from 'react';
 import './HomePage.css'
 
-
+import Hero from '../components/Hero';
+import Carousel from '../components/Carousel'
+import Footer from '../components/Footer';
 
 function Homepage (props) {
     
  
   return(
     <div id="App">
-          <div id="hero">
-            <div id="header">
-              <h1 id="line">Joseph Blackledge: Software Developer.</h1>
-            </div>
-          </div>
-        </div>
-  
+    <Hero title={props.title} sub={props.sub} text={props.text}/>
+    <Carousel />
+    
+    </div>
    
   );
   

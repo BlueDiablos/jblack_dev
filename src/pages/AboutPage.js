@@ -3,7 +3,7 @@ import './AboutPage.css';
 
 function AboutPage(){
   return(
-    <p>About page here</p>
+    <p>Under Construction!</p>
   )
 }
 

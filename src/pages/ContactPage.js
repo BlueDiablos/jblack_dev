@@ -3,7 +3,7 @@ import './ContactPage.css';
 
 function ContactPage(){
   return(
-    <p>Contact Page here</p>
+    <p>Under Construction!</p>
   )
 }
 

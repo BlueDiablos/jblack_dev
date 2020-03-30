@@ -25,9 +25,9 @@ class App extends React.Component {
       ],
 
       home: {
-        title: 'Be Ambitious',
-        sub: 'First Impressions Are Everything',
-        text: 'See my projects below'
+        title: 'Joseph Blackledge',
+        sub: 'Software Engineer',
+        text: 'Click Images To Explore'
       },
       about:{
         title: "Who Am I"
@@ -44,7 +44,7 @@ class App extends React.Component {
       <Container className="p-0" fluid={true}>
 
         <Navbar className="border-bottom" variant="light" bg="transparent" expand="lg">
-          <Navbar.Brand>Joseph Blackledge</Navbar.Brand>
+          <Navbar.Brand>Jblack</Navbar.Brand>
 
           <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
           <Navbar.Collapse id="navbar-toggle">
@@ -61,7 +61,7 @@ class App extends React.Component {
         <Route path = "/contact" exact render={() => <ContactPage title={this.state.contact.title} />} />
 
 
-      <Footer/>
+     
       </Container>
       </Router>
    
