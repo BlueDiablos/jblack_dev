@@ -1,26 +1,30 @@
 #App{
+    background-color: #fff;
     height: 100vh;
     width: 100%;
-    font: 'Myriad Set Pro';
+    font-family: Poppins;
+ 
 }
 #text{
     font-weight: lighter;
     text-align: center;
+    font-family: Poppins;
+    letter-spacing: 3px;
     
-    letter-spacing: 6px;
-    line-height: 58px;
 }
 #title{
-    font-weight: bolder;
-    
+    font-weight: bold;
+    font-size: 54px;
     letter-spacing: 6px;
     text-align: center;
-    line-height: 58px;
-    font-size: 350%;
+    font-family: Poppins;
+    letter-spacing: 3px;
+    
 }
 #sub{
-    letter-spacing: 6px;
-
+   
     text-align: center;
-    line-height: 58px;
+    font-family: Poppins;
+    letter-spacing: 3px;
+   
 }

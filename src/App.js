@@ -1,73 +1,90 @@
-import React, {Component} from 'react';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
-import { Container } from 'react-bootstrap';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Container } from "react-bootstrap";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
 
-import Footer from './components/Footer';
-import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
-import ContactPage from './pages/ContactPage';
-
-
-
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
 
 class App extends React.Component {
-
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       title: "Joseph Blackledge",
       headerLinks: [
-        {title: 'Home', path: '/'},
-        {title: 'About', path: '/about'},
-        {title: 'Contact', path: '/contact'},
+        { title: "Home", path: "/" },
+        { title: "About", path: "/about" },
+        { title: "Contact", path: "/contact" }
       ],
 
       home: {
-        title: 'Joseph Blackledge',
-        sub: 'Software Engineer',
-        text: 'Click Images To Explore'
+        title: "Joseph Blackledge",
+        sub: "Software Engineer",
+        text: "Click Images To Explore"
       },
-      about:{
-        title: "Who Am I"
+      about: {
+        title: "'Look at it go Homer; This one's gonnna go for miles'"
       },
-      contact:{
-        title: 'Reach out to me'
+      contact: {
+        title: "Reach out to me"
       }
-    }
+    };
   }
 
   render() {
-    return(
+    return (
       <Router>
-      <Container className="p-0" fluid={true}>
+        <Container id="nav-color" className="p-0" fluid={true}>
+          <Navbar variant="dark" bg="transparent" expand="lg">
+            <Navbar.Brand>Jblack</Navbar.Brand>
 
-        <Navbar className="border-bottom" variant="light" bg="transparent" expand="lg">
-          <Navbar.Brand>Jblack</Navbar.Brand>
+            <Navbar.Toggle
+              className="border-0"
+              id="toggle-color"
+              aria-controls="navbar-toggle"
+            />
+            <Navbar.Collapse id="navbar-toggle">
+              <Nav className="ml-auto">
+                <Link className="nav-link" to="/">
+                  Home
+                </Link>
+                <Link className="nav-link" to="/about">
+                  About
+                </Link>
+                <Link className="nav-link" to="/contact">
+                  Contact
+                </Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar>
 
-          <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
-          <Navbar.Collapse id="navbar-toggle">
-            <Nav className="ml-auto">
-              <Link className="nav-link" to="/">Home</Link>
-              <Link className="nav-link" to="/about">About</Link>
-              <Link className="nav-link" to="/contact">Contact</Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar>
-
-        <Route path = "/" exact render={() => <HomePage title={this.state.home.title} sub={this.state.home.sub} text={this.state.home.text} />} />
-        <Route path = "/about" exact render={() => <AboutPage title={this.state.about.title} />} />
-        <Route path = "/contact" exact render={() => <ContactPage title={this.state.contact.title} />} />
-
-
-     
-      </Container>
+          <Route
+            path="/"
+            exact
+            render={() => (
+              <HomePage
+                title={this.state.home.title}
+                sub={this.state.home.sub}
+                text={this.state.home.text}
+              />
+            )}
+          />
+          <Route
+            path="/about"
+            exact
+            render={() => <AboutPage title={this.state.about.title} />}
+          />
+          <Route
+            path="/contact"
+            exact
+            render={() => <ContactPage title={this.state.contact.title} />}
+          />
+        </Container>
       </Router>
-   
-    )
+    );
   }
-  
 }
 
 export default App;
