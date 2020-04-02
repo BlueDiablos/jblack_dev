@@ -1,11 +1,13 @@
 import React from "react";
 import "./Pane.css";
-
+import { Container } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 
 
 function Pane(props) {
   return ( 
-    
+    <Container fluid={true}>
+    <Row className="justify-content-around">
     <div className="slide">
       <div className="card">
         <div className="card-img" id="img1">
@@ -17,6 +19,8 @@ function Pane(props) {
         </div>
       </div>
     </div>
+    </Row>
+    </Container>
     
   );
 }
