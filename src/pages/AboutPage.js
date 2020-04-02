@@ -1,7 +1,8 @@
 import React from "react";
 import "./AboutPage.css";
 import Pane from "../components/Pane";
-import { render } from "@testing-library/react";
+import { Container } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 
 class AboutPage extends React.Component {
   constructor(props) {
@@ -40,7 +41,15 @@ class AboutPage extends React.Component {
   };
 
   render() {
-    return <div id="App">{this.makePanes(this.state.info)}</div>;
+    return (
+      <div id="App">
+      <Container fluid={true}>
+        <Row className="justify-content-around">
+          {this.makePanes(this.state.info)}
+        </Row>
+      </Container>
+      </div>
+    );
   }
 }
 

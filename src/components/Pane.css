@@ -9,8 +9,8 @@
   height: 100%;
 }
 .card {
-  width: 90vh;
-  height: 90vh;
+  width: 60vw;
+  height: 900px;
   display: flex;
   background: #fff;
   
@@ -25,6 +25,7 @@
 
 #img1 {
   min-height: 100%;
+
   background-image: url("https://images.pexels.com/photos/1367192/pexels-photo-1367192.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
 }
 
@@ -32,6 +33,7 @@
   padding: 10% 5%;
   box-sizing: border-box;
   width: 50%;
+  height: 100%;
   background: #1b1b1b;
 }
 .card-theme {
