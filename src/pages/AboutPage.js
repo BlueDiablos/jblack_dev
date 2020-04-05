@@ -14,21 +14,34 @@ class AboutPage extends React.Component {
           title: "Who Am I",
           header: "Joseph Blackledge",
           body:
-            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+            "I love technology; building custom computers for all sorts of hobbies online; putting together my own mechanical keyboards; " +
+            "following the latest upgrades in hardware; and designing/building software. " +
+            "The challenges involved with technology are engaging, entertaining and fulfilling " +
+            " --discovering new ways to enrich peoples lives. This is why I pursued Computer Science."
         },
         {
           id: 1,
           title: "Education",
-          header: "University of North Carolina Charlotte",
+          header: "UNCC",
           body:
-            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+            "Graduated From the University of North Carolina at Charlotte where I studied the Agile framework; object oriented "+
+            "programming and data structures; database design, tools and theory; Web design; secure "+
+            "programming and the SSDLC (Secure Software Development Life Cycle); software architecture and design systems; "+
+            "software development life cycle; networking and information systems; computer architecture; logic and algorithms."
+            
         },
         {
           id: 2,
-          title: "Skill Set and Experience",
-          header: "Software Engineer",
+          title: "Experience",
+          header: "Projects",
           body:
-            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+            "I've worked on many project both in the class room and outside."+
+            "I've designed and built a simple login authentication API. "+
+            "I was a part of a team that built a chat application for the university called Niner Chat, which allowed students to login in with their "+
+            ".edu domain and join chatroom's relevant to their major/college. "+
+            "I also designed an e commerce website to simulate how a shopping cart would behave "+
+            "and many more which can all be found on my Github."
+            
         }
       ]
     };
@@ -43,11 +56,11 @@ class AboutPage extends React.Component {
   render() {
     return (
       <div id="App">
-      <Container fluid={true}>
-        <Row className="justify-content-around">
-          {this.makePanes(this.state.info)}
-        </Row>
-      </Container>
+        <Container fluid={true}>
+          <Row className="justify-content-around">
+            {this.makePanes(this.state.info)}
+          </Row>
+        </Container>
       </div>
     );
   }

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, withRouter } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -25,10 +25,11 @@ class App extends React.Component {
         text: "Click Images To Explore"
       },
       about: {
-        title: "'Look at it go Homer; This one's gonnna go for miles'"
+        title: "'Look at it go Homer; This one's gonna go for miles'"
       },
       contact: {
-        title: "Reach out to me"
+        title: "Reach out to me",
+        sub: "Open for Software Development roles"
       }
     };
   }
@@ -79,7 +80,7 @@ class App extends React.Component {
           <Route
             path="/contact"
             exact
-            render={() => <ContactPage title={this.state.contact.title} />}
+            render={() => <ContactPage title={this.state.contact.title} sub={this.state.contact.sub} />}
           />
         </Container>
       </Router>
