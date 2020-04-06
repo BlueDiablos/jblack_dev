@@ -1,24 +1,23 @@
-import React from 'react';
-import './ContactPage.css';
+import React from "react";
+import "./ContactPage.css";
 
-import Hero from '../components/Hero';
-import Content from '../components/Content';
-import { Form } from 'react-bootstrap';
-import { Button } from 'react-bootstrap';
+import Hero from "../components/Hero";
+import Content from "../components/Content";
+import { Form } from "react-bootstrap";
+import { Button } from "react-bootstrap";
+import Footer from '../components/Footer';
 
 
-class ContactPage extends React.Component{
-
-  constructor(props){
+class ContactPage extends React.Component {
+  constructor(props) {
     super(props);
     this.state = {
-      name: '',
-      email: '',
-      message: '',
+      name: "",
+      email: "",
+      message: "",
       disabled: false,
-      emailSent: null
-    
-    }
+      emailSent: null,
+    };
   }
 
   handleChange = (event) => {
@@ -29,45 +28,80 @@ class ContactPage extends React.Component{
     const name = target.name;
 
     this.setState({
-      [name]: value
-    })
+      [name]: value,
+    });
   };
 
+  handleSubmit = (event) => {
+    event.preventDefault();
 
+    this.setState({
+      disabled: true,
+      emailSent: false,
+    });
+  };
 
-  render(){
+  render() {
+    return (
+      <div id="App">
+        <Hero title={this.props.title} sub={this.props.sub} />
+        <Content>
+          <Form onSubmit={this.handleSubmit}>
+            <Form.Group>
+              <Form.Label htmlFor="full-name">Full Name: </Form.Label>
+              <Form.Control
+                id="full-name"
+                name="name"
+                type="text"
+                value={this.state.name}
+                onChange={this.handleChange}
+              ></Form.Control>
+            </Form.Group>
 
-  return(
-    <div id="App">
-      <Hero title={this.props.title} sub={this.props.sub}/>
-      <Content>
-        <Form onSubmit={this.handleSubmit}>
-          <Form.Group>
-            <Form.Label htmlFor="full-name">Full Name: </Form.Label>
-            <Form.Control id="full-name" name="name" type="text" value={this.state.name} onChange={this.handleChange}></Form.Control>
-          </Form.Group>
+            <Form.Group>
+              <Form.Label htmlFor="email">Email: </Form.Label>
+              <Form.Control
+                id="email"
+                name="email"
+                type="email"
+                value={this.state.email}
+                onChange={this.handleChange}
+              ></Form.Control>
+            </Form.Group>
 
-          <Form.Group>
-            <Form.Label htmlFor="email">Email: </Form.Label>
-            <Form.Control id="email" name="email" type="email" value={this.state.email} onChange={this.handleChange}></Form.Control>
-          </Form.Group>
+            <Form.Group>
+              <Form.Label htmlFor="message">Message: </Form.Label>
+              <Form.Control
+                id="message"
+                name="message"
+                as="textarea"
+                rows="5"
+                value={this.state.message}
+                onChange={this.handleChange}
+              ></Form.Control>
+            </Form.Group>
 
-          <Form.Group>
-            <Form.Label htmlFor="message">Message: </Form.Label>
-            <Form.Control id="message" name="message" as="textarea" rows="5" value={this.state.message} onChange={this.handleChange}></Form.Control>
-          </Form.Group>
+            <Button
+              className="d-inline-block"
+              variant="dark"
+              type="submit"
+              disabled={this.state.disabled}
+              onSubmit={this.handleSubmit}
+            >
+              Send
+            </Button>
 
-          <Button className="d-inline-block" variant="dark" type="submit" disabled={this.state.disabled}>
-          Send
-          </Button>
-          
-          {this.state.emailSent === true && <p className="d-inline success-msg">Email Sent</p>}
-          {this.state.emailSent === false && <p className="d-inline error-msg">Email Not Sent</p>}
-
-        </Form>
-      </Content>
-    </div>
-  )
+            {this.state.emailSent === true && (
+              <p className="d-inline success-msg">Email Sent</p>
+            )}
+            {this.state.emailSent === false && (
+              <p className="d-inline error-msg">Email Not Sent</p>
+            )}
+          </Form>
+        </Content>
+        <Footer/>
+      </div>
+    );
   }
 }
 

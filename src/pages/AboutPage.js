@@ -3,6 +3,8 @@ import "./AboutPage.css";
 import Pane from "../components/Pane";
 import { Container } from "react-bootstrap";
 import { Row } from "react-bootstrap";
+import Footer from '../components/Footer';
+
 
 class AboutPage extends React.Component {
   constructor(props) {
@@ -35,12 +37,12 @@ class AboutPage extends React.Component {
           title: "Experience",
           header: "Projects",
           body:
-            "I've worked on many project both in the class room and outside."+
-            "I've designed and built a simple login authentication API. "+
-            "I was a part of a team that built a chat application for the university called Niner Chat, which allowed students to login in with their "+
+            "I've worked on many projects both in the class room and outside."+
+            "I've designed and built a simple login authentication API; "+
+            "I was a part of a team that built a chat application for the university called Niner Chat which allowed students to login in with their "+
             ".edu domain and join chatroom's relevant to their major/college. "+
-            "I also designed an e commerce website to simulate how a shopping cart would behave "+
-            "and many more which can all be found on my Github."
+            "I also designed an eCommerce website to simulate how a shopping cart would behave "+
+            "and many others with a wide range of different technologies which --all found on my Github."
             
         }
       ]
@@ -61,6 +63,7 @@ class AboutPage extends React.Component {
             {this.makePanes(this.state.info)}
           </Row>
         </Container>
+        <Footer/>
       </div>
     );
   }

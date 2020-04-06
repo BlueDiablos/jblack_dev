@@ -12,7 +12,7 @@ function Homepage (props) {
     <div id="App">
     <Hero title={props.title} sub={props.sub}/>
     <Carousel />
-    
+    <Footer/>
     </div>
    
   );
