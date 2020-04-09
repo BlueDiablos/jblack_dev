@@ -17,7 +17,8 @@ class AboutPage extends React.Component {
           header: "Joseph Blackledge",
           body:
             "I love technology; building custom computers for all sorts of hobbies online; putting together my own mechanical keyboards; " +
-            "following the latest upgrades in hardware; and designing/building software. " +
+            "following the latest upgrades in hardware; and designing/building software. I am a dynamic, highly motivated and well-grounded individual with a passion for technology." +
+            "I consistently demonstrate a can-do attitude and embrace tough challenges with energy and enthusiasm. " +
             "The challenges involved with technology are engaging, entertaining and fulfilling " +
             " --discovering new ways to enrich peoples lives. This is why I pursued Computer Science."
         },
