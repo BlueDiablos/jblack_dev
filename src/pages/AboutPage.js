@@ -43,7 +43,7 @@ class AboutPage extends React.Component {
             "I was a part of a team that built a chat application for the university called Niner Chat which allowed students to login in with their "+
             ".edu domain and join chatroom's relevant to their major/college. "+
             "I also designed an eCommerce website to simulate how a shopping cart would behave "+
-            "and many others with a wide range of different technologies which --all found on my Github."
+            "and many others with a wide range of different technologies which can be found on my Github."
             
         }
       ]
