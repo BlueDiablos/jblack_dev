@@ -43,7 +43,7 @@ class ContactPage extends React.Component {
     Axios({
       method: 'post',
       url: 'http://localhost:3030/api/send',
-      data: this.state
+      data: this.state  
     }).then(res => {
       if (res.data.success) {
         this.setState({
