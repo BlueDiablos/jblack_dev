@@ -3,14 +3,16 @@
     align-items: center;
     margin-bottom: 10px;
     margin-top: 20px;
+    padding-bottom: 30px;
   
   }
   .j-card-image{
     border-radius: 20px;
-    width: 700px;
-    height: 700px;
+    width: 520px;
+    height: 500px;
     box-shadow: 0px 0px 3px 1px #ccc;
     background-color: #026386;
+    
   }
   .j-card-info {
     margin-top: 20px;
