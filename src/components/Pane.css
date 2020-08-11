@@ -11,9 +11,18 @@
 .card {
   width: 60vw;
   height: 900px;
-  display: flex;
+  display: flexbox;
   background: #fff;
   
+}
+
+@media screen and (min-height: 1400px){
+  .card{
+    width: 60vw;
+    height: 1400px;
+    display: flexbox;
+    background: #fff;
+  }
 }
 .card-img {
   background-position: center;
@@ -25,7 +34,6 @@
 
 #img1 {
   min-height: 100%;
-
   background-image: url("../assets/images/eveninghorizon.jpg");
 }
 
