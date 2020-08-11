@@ -13,19 +13,21 @@ class AboutPage extends React.Component {
       info: [
         {
           id: 0,
-          title: "Who I am",
-          header: "Joseph Blackledge",
+          title: "Joseph Blackledge",
+          header: "Who Am I",
           body:
-            "I am a hardworking, passionate individual who seeks to obtain all the knowledge I can from developers and people from many diverse backgrounds."
+            "I am a passionate, hardworking, young and dynamic software developer who wants to pursue a career in building solutions to complex problems with a diverse and open minded team while continuing to learn and grow as a developer and an individual."
             + " I enjoy wearing many different hats as a developer; I find that working on all the aspects of software allows me to understand it deeper."
-            + " Frontend, backend, QA testing, Database administration I enjoy it all."
+            + " Frontend, backend, QA testing, and database administration are just a few of the things I enjoy working on. I also have many different hobbies -building mechanical keyboards is perhaps the strangest and most unique among them."
+            + " Not only do I tinker with keyboards, I also build computers and home entertainment servers. Aside from technology, I enjoy spending time with friends and family, experiencing new things, listening to music, playing video games"
+            + " and reading fantasy and sci-fi."
         },
         {
           id: 1,
-          title: "Education",
-          header: "UNCC",
+          title: "UNCC",
+          header: "Education and Experience",
           body:
-            "Graduated from the University of North Carolina at Charlotte with a Bachelors of Science in Computer Science and a Minor in Psychology in May of 2020. " +
+            "I Graduated from the University of North Carolina at Charlotte with a Bachelors of Science in Computer Science and a Minor in Psychology in May of 2020. " +
             " Here I learned the Computer Science fundementals such as: computer programming, computer organization, data structures and algorithms, operating systems and computer networking." 
             + " I also studied the software engineering process and the different methods and frameworks that help make it successful, like Agile development, Scrum methodologies and version control."
             
