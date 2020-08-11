@@ -13,39 +13,23 @@ class AboutPage extends React.Component {
       info: [
         {
           id: 0,
-          title: "Who Am I",
+          title: "Who I am",
           header: "Joseph Blackledge",
           body:
-            "I love technology; building custom computers for all sorts of hobbies online; putting together my own mechanical keyboards; " +
-            "following the latest upgrades in hardware; and designing/building software. I am a dynamic, highly motivated and well-grounded individual with a passion for technology." +
-            "I consistently demonstrate a can-do attitude and embrace tough challenges with energy and enthusiasm. " +
-            "The challenges involved with technology are engaging, entertaining and fulfilling " +
-            " --discovering new ways to enrich peoples lives. This is why I pursued Computer Science."
+            "I am a hardworking, passionate individual who seeks to obtain all the knowledge I can from developers and people from many diverse backgrounds."
+            + " I enjoy wearing many different hats as a developer; I find that working on all the aspects of software allows me to understand it deeper."
+            + " Frontend, backend, QA testing, Database administration I enjoy it all."
         },
         {
           id: 1,
           title: "Education",
           header: "UNCC",
           body:
-            "Graduated From the University of North Carolina at Charlotte where I studied the Agile framework; object oriented "+
-            "programming and data structures; database design, tools and theory; Web design; secure "+
-            "programming and the SSDLC (Secure Software Development Life Cycle); software architecture and design systems; "+
-            "software development life cycle; networking and information systems; computer architecture; logic and algorithms."
+            "Graduated from the University of North Carolina at Charlotte with a Bachelors of Science in Computer Science and a Minor in Psychology in May of 2020. " +
+            " Here I learned the Computer Science fundementals such as: computer programming, computer organization, data structures and algorithms, operating systems and computer networking." 
+            + " I also studied the software engineering process and the different methods and frameworks that help make it successful, like Agile development, Scrum methodologies and version control."
             
         },
-        {
-          id: 2,
-          title: "Experience",
-          header: "Projects",
-          body:
-            "I've worked on many projects both in the class room and outside."+
-            "I've designed and built a simple login authentication API; "+
-            "I was a part of a team that built a chat application for the university called Niner Chat which allowed students to login in with their "+
-            ".edu domain and join chatroom's relevant to their major/college. "+
-            "I also designed an eCommerce website to simulate how a shopping cart would behave "+
-            "and many others with a wide range of different technologies which can be found on my Github."
-            
-        }
       ]
     };
   }
