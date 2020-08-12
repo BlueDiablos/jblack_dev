@@ -16,7 +16,8 @@ class App extends React.Component {
       headerLinks: [
         { title: "Home", path: "/" },
         { title: "About", path: "/about" },
-        { title: "Contact", path: "/contact" }
+        { title: "Contact", path: "/contact" },
+        { title: "Projects", path: "/project"}
       ],
 
       home: {
@@ -51,12 +52,16 @@ class App extends React.Component {
                 <Link className="nav-link" to="/">
                   Home
                 </Link>
+                <Link className="nav-link" to="/project">
+                  Projects
+                </Link>
                 <Link className="nav-link" to="/about">
                   About
                 </Link>
                 <Link className="nav-link" to="/contact">
                   Contact
                 </Link>
+               
               </Nav>
             </Navbar.Collapse>
           </Navbar>
