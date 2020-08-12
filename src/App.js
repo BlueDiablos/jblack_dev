@@ -52,10 +52,24 @@ class App extends React.Component {
             </NavDropdown>
             <Navbar.Collapse  id="basic-navbar-nav">
               <Nav className="ml-auto">
+<<<<<<< HEAD
                 <Nav.Link  style={{color:"white"}} className="nav-link" href="/">Projects</Nav.Link>
                 <Nav.Link  style={{color:"white"}} className="nav-link" href="/about">About</Nav.Link>
                 <Nav.Link  style={{color:"white"}} className="nav-link" href="/contact">Contact</Nav.Link>
              
+=======
+                <Link className="nav-link" to="/">
+                  Home
+                </Link>
+  
+                <Link className="nav-link" to="/about">
+                  About
+                </Link>
+                <Link className="nav-link" to="/contact">
+                  Contact
+                </Link>
+               
+>>>>>>> master
               </Nav>
            
             </Navbar.Collapse>
