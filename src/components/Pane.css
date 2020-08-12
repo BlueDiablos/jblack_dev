@@ -16,14 +16,6 @@
   
 }
 
-@media screen and (min-height: 1400px){
-  .card{
-    width: 60vw;
-    height: 1400px;
-    display: flexbox;
-    background: #fff;
-  }
-}
 .card-img {
   background-position: center;
   width: 100%;
@@ -79,4 +71,18 @@
   cursor: pointer;
   opacity: 0.7;
   transition: opacity 0.3s ease;
+}
+/*going to need to edit this for mobile - cards do not scale properly*/
+@media screen and (max-width: 600px){
+  
+  
+}
+/*for vertical displays*/
+@media screen and (min-height: 1400px){
+  .card{
+    width: 60vw;
+    height: 1400px;
+    display: flexbox;
+    background: #fff;
+  }
 }

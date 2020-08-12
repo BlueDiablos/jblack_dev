@@ -1,13 +1,17 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Link, withRouter } from "react-router-dom";
-import { Container } from "react-bootstrap";
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  withRouter,
+} from "react-router-dom";
+import { Container, NavDropdown } from "react-bootstrap";
 import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-
+import Nav from "react-bootstrap/Nav";  
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
-
+import "./index.css"  
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -17,52 +21,43 @@ class App extends React.Component {
         { title: "Home", path: "/" },
         { title: "About", path: "/about" },
         { title: "Contact", path: "/contact" },
-        { title: "Projects", path: "/project"}
+        { title: "Projects", path: "/project" },
       ],
 
       home: {
         title: "Joseph Blackledge",
         sub: "Software Engineer",
-        text: "Click Images To Explore"
+        text: "Click Images To Explore",
       },
       about: {
-        title: "'Look at it go Homer; This one's gonna go for miles'"
+        title: "'Look at it go Homer; This one's gonna go for miles'",
       },
       contact: {
         title: "Reach out to me",
-        sub: "Open for Software Development roles"
-      }
+        sub: "Open for Software Development roles",
+      },
     };
   }
 
   render() {
     return (
-      <Router>
+      <Router >
         <Container id="nav-color" className="p-0" fluid={true}>
           <Navbar variant="dark" bg="transparent" expand="lg">
-            <Navbar.Brand>Jblack</Navbar.Brand>
-
-            <Navbar.Toggle
-              className="border-0"
-              id="toggle-color"
-              aria-controls="navbar-toggle"
-            />
-            <Navbar.Collapse id="navbar-toggle">
+            <Navbar.Brand href="/">Jblack</Navbar.Brand>
+            <NavDropdown title="Pages" id="basic-nav-dropdown" className="dropdown">
+                <Nav.Link style={{color:"black"}} className="nav-link" href="/">Projects</Nav.Link>
+                
+                <Nav.Link style={{color:"black"}} className="nav-link" href="/contact">Contact</Nav.Link>
+            </NavDropdown>
+            <Navbar.Collapse  id="basic-navbar-nav">
               <Nav className="ml-auto">
-                <Link className="nav-link" to="/">
-                  Home
-                </Link>
-                <Link className="nav-link" to="/project">
-                  Projects
-                </Link>
-                <Link className="nav-link" to="/about">
-                  About
-                </Link>
-                <Link className="nav-link" to="/contact">
-                  Contact
-                </Link>
-               
+                <Nav.Link  style={{color:"white"}} className="nav-link" href="/">Projects</Nav.Link>
+                <Nav.Link  style={{color:"white"}} className="nav-link" href="/about">About</Nav.Link>
+                <Nav.Link  style={{color:"white"}} className="nav-link" href="/contact">Contact</Nav.Link>
+             
               </Nav>
+           
             </Navbar.Collapse>
           </Navbar>
 
@@ -85,13 +80,16 @@ class App extends React.Component {
           <Route
             path="/contact"
             exact
-            render={() => <ContactPage title={this.state.contact.title} sub={this.state.contact.sub} />}
+            render={() => (
+              <ContactPage
+                title={this.state.contact.title}
+                sub={this.state.contact.sub}
+              />
+            )}
           />
         </Container>
       </Router>
-    
     );
-   
   }
 }
 

@@ -17,3 +17,10 @@ code {
 .nav-link{
   font-size: 20px;
 }
+
+/*for mobile to hide dropdown menu when in desktop*/
+@media screen  and (min-width: 600px){
+  .dropdown{
+    display: none;
+  }
+}
