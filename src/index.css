@@ -19,7 +19,7 @@ code {
 }
 
 /*for mobile to hide dropdown menu when in desktop*/
-@media screen  and (min-width: 600px){
+@media screen  and (min-width: 800px){
   .dropdown{
     display: none;
   }
