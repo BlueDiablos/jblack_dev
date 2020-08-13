@@ -3,23 +3,19 @@ import "./Pane.css";
 import { Container } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 
-
 function Pane(props) {
-  return ( 
+  return (
+    <div className="wrapper">
+       <div className="card">
 
-    <div className="slide">
-      <div className="card">
-        <div className="card-img" id="img1">
-          <div className="card-content">
-            <p className="card-theme">{props.info.title}</p>
-            <h2 className="card-header">{props.info.header}</h2>
-            <p className="card-paragraph">{props.info.body}</p>
-          </div>
-        </div>
       </div>
+      <div className="card">
+        <h2 className="title">{props.info.title}</h2>
+        <p className="header"> {props.info.header}</p>
+        <p className="paragraph">{props.info.body}</p>
+      </div>
+     
     </div>
-
-    
   );
 }
 export default Pane;
