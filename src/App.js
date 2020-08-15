@@ -12,6 +12,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import "./index.css"  
+import ProjectPage from "./pages/ProjectPage";
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -52,7 +53,7 @@ class App extends React.Component {
             </NavDropdown>
             <Navbar.Collapse  id="basic-navbar-nav">
               <Nav className="ml-auto">
-                <Nav.Link  style={{color:"white"}} className="nav-link" href="/">Projects</Nav.Link>
+                <Nav.Link  style={{color:"white"}} className="nav-link" href="/project">Projects</Nav.Link>
                 <Nav.Link  style={{color:"white"}} className="nav-link" href="/about">About</Nav.Link>
                 <Nav.Link  style={{color:"white"}} className="nav-link" href="/contact">Contact</Nav.Link>
              
@@ -76,6 +77,11 @@ class App extends React.Component {
             path="/about"
             exact
             render={() => <AboutPage title={this.state.about.title} />}
+          />
+           <Route
+            path="/project"
+            exact
+            render={() => <ProjectPage title={this.state.about.title} />}
           />
           <Route
             path="/contact"

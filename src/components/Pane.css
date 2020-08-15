@@ -1,23 +1,32 @@
 .wrapper > div{
   background: #eee;
   padding: 1em;
-  height: 90vh;
+  height: 100%;
+  overflow: none;
+  
   
 }
 .wrapper > div:nth-child(odd){
-  background-image: url("../assets/images/eveninghorizon.jpg");
-  background-size: 90vmax auto;
+  background-image: url("../assets/images/personalpic.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
+
 .wrapper{
   padding-top: 20px;
   padding-left: 30px;
   display: grid;
-  grid-template-columns: 40% 50%;
+  grid-template-columns: 30% 60%;
   grid-column-gap: 3em;
   grid-row-gap: 1em;
   
-}
 
+}
+.card{
+  height: 100%;
+ 
+}
 .title{
   font-weight: 700;
   font-size: 54px;
@@ -39,10 +48,62 @@
   margin-bottom: 50px;
 }
 .paragraph{
-  font-size: 1.6vmin;
+  font-size: 2vmin;
   line-height: 2.2;
   font-weight: 300;
   margin-bottom: 2.5vmin;
   color: #1b1b1b;
   font-family: Poppins;
+}
+
+@media screen and (max-width: 900px){
+  .wrapper > div{
+    background: #eee;
+    padding: 1em;
+    height: 100%;
+    overflow: none;
+    
+  }
+  .wrapper > div:nth-child(odd){
+    display: none;
+  }
+  .wrapper{
+    padding-top: 20px;
+    display: flex;
+    grid-template-columns: 50% 50%;
+    
+    
+  }
+  .card{
+    height: 100%;
+  }
+  .title{
+    font-weight: 700;
+    font-size: 34px;
+    text-transform: capitalize;
+    line-height: 1;
+    margin: 3vmin 0 3.5vmin;
+    margin-top: 50px;
+    font-family: Poppins;
+    color: #1b1b1b;
+  
+  }
+  .header{
+    font-weight: 900;
+    font-size: 1vmin;
+    text-transform: uppercase;
+    font-family: Poppins;
+    letter-spacing: 10px;
+    color: #1b1b1b;
+    margin-bottom: 50px;
+  }
+  .paragraph{
+    font-size: 2vmin;
+    line-height: 2.2;
+    font-weight: 300;
+    margin-bottom: 2.5vmin;
+    color: #1b1b1b;
+    font-family: Poppins;
+  } 
+
 }
