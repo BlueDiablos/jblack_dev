@@ -15,10 +15,10 @@ class AboutPage extends React.Component {
           title: "Joseph Blackledge",
           header: "Software Developer",
           body:
-            "I graduated from the University of North Carolina at Charlotte with a Bachelor of Science in Computer Science and a minor in Psychology in May of 2020" +
-            " It was my time at the University where I learned computer science fundementals such as: computer programming, computer organization, data structures and algorithms, operating systems, computer networking and computer architecture." +
+            "I am a passionate, hardworking, young and dynamic software developer who wants to pursue a career in building solutions to complex problems with a diverse and open minded team, while continuing to learn and grow as a developer and an individual."+
+            " I graduated from the University of North Carolina at Charlotte with a Bachelor of Science in Computer Science and a minor in Psychology in May of 2020." +
+            " It was my time at the University where I learned the computer science fundementals such as: computer programming, computer organization, data structures and algorithms, operating systems, computer networking and computer architecture." +
             " I also studied the software engineering process and some of the different tools and methods that make it successful, like agile development methods, scrum, version control, user studies and stories and understanding business requirements." +
-            " I am a passionate, hardworking, young and dynamic software developer who wants to pursue a career in building solutions to complex problems with a diverse and open minded team, while continuing to learn and grow as a developer and an individual." +
             " I enjoy wearing many different hats as a developer; I find that working on all the aspects of software allows me to understand it deeper." +
             " Frontend, backend, QA testing, and database administration are just a few of the things I enjoy working on. I also have many different hobbies -building mechanical keyboards is perhaps the strangest and most unique among them." +
             " Not only do I tinker with keyboards, I also build computers and home entertainment servers. Aside from technology, I enjoy spending time with friends and family, experiencing new things, listening to music, playing video games" +
