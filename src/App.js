@@ -27,7 +27,7 @@ class App extends React.Component {
 
       home: {
         title: "Joseph Blackledge",
-        sub: "Software Engineer",
+        sub: "Click any of the icons below",
         text: "Click Images To Explore",
       },
       about: {
