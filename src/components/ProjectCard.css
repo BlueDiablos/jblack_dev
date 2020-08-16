@@ -3,6 +3,7 @@
     padding: 1em;
     height: 100%;
     
+    
   }
   
   .container{
@@ -14,7 +15,6 @@
   }
   .proj-card {
     height: 100%;
-    width: 100%;
     border-radius: 1.625em;
     box-shadow: 0px 0px 3px 1px #ccc;
   }
@@ -48,7 +48,7 @@
   }
   .card-image{
     border-radius: 1.25em;
-    width: 50%;
+    width: 80%;
     box-shadow: 0px 0px 3px 1px #ccc;
   }
   @media screen and (max-width: 900px){

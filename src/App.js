@@ -44,7 +44,7 @@ class App extends React.Component {
     return (
       <Router >
         <Container id="nav-color" className="p-0" fluid={true}>
-          <Navbar variant="dark" bg="transparent" expand="lg">
+          <Navbar variant="dark" bg="dark" expand="lg">
             <Navbar.Brand href="/">Jblack</Navbar.Brand>
             <NavDropdown title="Pages" id="basic-nav-dropdown" className="dropdown">
                 <Nav.Link style={{color:"black"}} className="nav-link" href="/">Projects</Nav.Link>
