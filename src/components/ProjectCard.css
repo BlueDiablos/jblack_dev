@@ -2,8 +2,7 @@
     background: #eee;
     padding: 1em;
     height: 100%;
-    
-    
+  
   }
   
   .container{
@@ -53,7 +52,7 @@
   }
   @media screen and (max-width: 900px){
     .proj-body{
-      font-size: 4vmin;
+    font-size: 4vmin;
     line-height: 2.2;
     font-weight: 300;
     margin-bottom: 2.5vmin;
