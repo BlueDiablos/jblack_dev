@@ -13,6 +13,7 @@ import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import "./index.css"  
 import ProjectPage from "./pages/ProjectPage";
+import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -43,22 +44,16 @@ class App extends React.Component {
   render() {
     return (
       <Router >
-        <Container id="nav-color" className="p-0" fluid={true}>
-          <Navbar variant="dark" bg="dark" expand="lg">
+        <Container className="p-0" fluid={true}>
+          <Navbar variant="dark" style={{backgroundColor: "#2b2b2b"}} expand="lg">
             <Navbar.Brand href="/">Jblack</Navbar.Brand>
-            <NavDropdown title="Pages" id="basic-nav-dropdown" className="dropdown">
-                <Nav.Link style={{color:"black"}} className="nav-link" href="/">Projects</Nav.Link>
-                
-                <Nav.Link style={{color:"black"}} className="nav-link" href="/contact">Contact</Nav.Link>
-            </NavDropdown>
-            <Navbar.Collapse  id="basic-navbar-nav">
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav" style={{zIndex: 99, height:"100%", backgroundColor:"#2b2b2b",textAlign:"center"}}>
               <Nav className="ml-auto">
-                <Nav.Link  style={{color:"white"}} className="nav-link" href="/">Projects (Coming Soon) </Nav.Link>
-                <Nav.Link  style={{color:"white"}} className="nav-link" href="/about">About</Nav.Link>
-                <Nav.Link  style={{color:"white"}} className="nav-link" href="/contact">Contact</Nav.Link>
-             
+                <Nav.Link  className="nav-link" href="/">Projects (Coming Soon) </Nav.Link>
+                <Nav.Link  className="nav-link" href="/about">About</Nav.Link>
+                <Nav.Link  className="nav-link" href="/contact">Contact</Nav.Link>
               </Nav>
-           
             </Navbar.Collapse>
           </Navbar>
 

@@ -55,7 +55,7 @@ class ProjectPage extends React.Component {
     
       render() {
         return (
-          <div id="App">
+          <div id="">
             <Container fluid={true}>
               <Row className="justify-content-around">
                 {this.makeCards(this.state.info)}
