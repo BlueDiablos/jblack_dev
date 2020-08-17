@@ -1,23 +1,20 @@
 import React from "react";
 import "./ProjectCard.css";
-import { useSpring, animated } from "react-spring";
-
+import ProjectLink from "./ProjectLink";
 function ProjectCard(props) {
-  const style = useSpring({
-    from: { opacity: 0, transform: "translate3d(0,-40px,0)" },
-    to: { opacity: 1, transform: "translate3d(0,0px,0)" }
-  });
+
   return (
     
     <div className="container">
-      <div className="proj-card">
+      <div className="proj-card" onClick={e => props.click(props.info)}>
         <h2 className="proj-title">{props.info.title}</h2>
         <p className="proj-header"> {props.info.header}</p>
         <p className="proj-body">{props.info.body}</p>
-        <img
-        className="card-image"
-        src={props.info.imageSrc}
-      />
+        {props.info.selected && (
+        <ProjectLink
+          link={props.info.link}
+        />
+        )}
       </div>
     </div>
    

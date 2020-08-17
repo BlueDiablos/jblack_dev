@@ -4,7 +4,7 @@ import Pane from "../components/Pane";
 import { Container } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 import Footer from "../components/Footer";
-
+import Hero from "../components/Hero";
 class AboutPage extends React.Component {
   constructor(props) {
     super(props);
@@ -37,6 +37,7 @@ class AboutPage extends React.Component {
   render() {
     return (
       <div id="App">
+        <Hero title={this.props.title} sub={this.props.sub} />
         <Container fluid={true}>
           <Row className="justify-content-around">
             {this.makePanes(this.state.info)}

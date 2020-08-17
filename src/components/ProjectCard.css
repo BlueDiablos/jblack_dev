@@ -8,8 +8,8 @@
   .container{
     padding-top: 1.25em;
     padding-left: 1.87em;
-    display: grid;
-    grid-template-columns: 100%;
+    display: flex;
+    align-items: center;
   
   }
   .proj-card {
@@ -23,7 +23,7 @@
     text-transform: capitalize;
     line-height: 1;
     margin: 3vmin 0 3.5vmin;
-    margin-top:   3.125em;
+    margin-top:   1.125em;
     font-family: Poppins;
     color: #1b1b1b;
     
@@ -45,24 +45,17 @@
     color: #1b1b1b;
     font-family: Poppins;
   }
-  .card-image{
-    border-radius: 1.25em;
-    width: 80%;
-    box-shadow: 0px 0px 3px 1px #ccc;
-  }
+.button-info{
+  display: grid;
+}
   @media screen and (max-width: 900px){
     .proj-body{
-    font-size: 4vmin;
-    line-height: 2.2;
-    font-weight: 300;
-    margin-bottom: 2.5vmin;
-    color: #1b1b1b;
-    font-family: Poppins;
-    }
-    .card-image{
-      border-radius: 1.25em;
-      width: 100%;
-      box-shadow: 0px 0px 3px 1px #ccc;
+      font-size: 2vmin;
+      line-height: 2.2;
+      font-weight: 300;
+      margin-bottom: 2.5vmin;
+      color: #1b1b1b;
+      font-family: Poppins;
     }
     .proj-header{
       font-weight: 900;

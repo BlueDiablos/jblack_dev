@@ -32,12 +32,17 @@ class App extends React.Component {
         text: "Click Images To Explore",
       },
       about: {
-        title: "'Look at it go Homer; This one's gonna go for miles'",
+        title: "Who I Am",
+        sub: "'This One's Gonna Go for Miles'"
       },
       contact: {
         title: "Reach out to me",
         sub: "Open for Software Development roles",
       },
+      project: {
+        title: "Most Notable Projects",
+        sub : "Click card to explore more"
+      }
     };
   }
 
@@ -50,8 +55,8 @@ class App extends React.Component {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav" style={{zIndex: 99, height:"100%", backgroundColor:"#2b2b2b",textAlign:"center"}}>
               <Nav className="ml-auto">
-                <Nav.Link  className="nav-link" href="/">Projects (Coming Soon) </Nav.Link>
-                <Nav.Link  className="nav-link" href="/about">About</Nav.Link>
+                <Nav.Link  className="nav-link" href="/project">Explore </Nav.Link>
+                <Nav.Link  className="nav-link" href="/about">Learn</Nav.Link>
                 <Nav.Link  className="nav-link" href="/contact">Contact</Nav.Link>
               </Nav>
             </Navbar.Collapse>
@@ -71,12 +76,12 @@ class App extends React.Component {
           <Route
             path="/about"
             exact
-            render={() => <AboutPage title={this.state.about.title} />}
+            render={() => <AboutPage title={this.state.about.title} sub={this.state.about.sub} />}
           />
            <Route
             path="/project"
             exact
-            render={() => <ProjectPage title={this.state.about.title} />}
+            render={() => <ProjectPage title={this.state.project.title} sub={this.state.project.sub} />}
           />
           <Route
             path="/contact"
