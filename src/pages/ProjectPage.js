@@ -51,7 +51,7 @@ class ProjectPage extends React.Component {
               selected: false,
               body:
                 "This is - well, this is this website you're on right now. Built with JavaScript using the React Library, Express framework (NodeJS) for the backend service for the contact page and hosted using Google Firebase. This website allowed me to hone in on my web development skills"
-                + " as well as own a place to showcase my abilities, allow people to reach out and perhaps allow someone to get to understand me a little better. Following the button attatched to this project card you can see exactly how this is designed."
+                + " as well as own a place to showcase my abilities, allow people to reach out and perhaps allow people to understand me a little better. Following the button attatched to this project card you can see exactly how this is designed."
                 + " However, the backend service is hidden for security reasons."
             },
           ],
