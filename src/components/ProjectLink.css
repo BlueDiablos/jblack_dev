@@ -3,5 +3,19 @@
     border-radius: 4px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     text-align: center;
+    width: 20%;
+    margin-left: 40%;
+    
+}
 
+@media screen and (max-width: 900px){
+    .button-secondary {
+        color: white;
+        border-radius: 4px;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: 35%;
+        margin-left: 30%;
+        
+    }
 }

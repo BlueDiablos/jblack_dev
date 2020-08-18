@@ -6,7 +6,7 @@ function ProjectLink(props) {
   const style = useSpring({ opacity: 1, from: { opacity: 0 } });
   return (
     <animated.div style={style}>
-      <Button href={props.link} target="_blank" rel="noopener noreferrer">
+      <Button href={props.link} target="_blank" rel="noopener noreferrer" className="button-secondary">
         See Repository
       </Button>
       </animated.div>

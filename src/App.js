@@ -28,8 +28,8 @@ class App extends React.Component {
 
       home: {
         title: "Joseph Blackledge",
-        sub: "Click any of the icons below",
-        text: "Click Images To Explore",
+        sub: "Software Developer",
+        text: "Click or tap any of the icons below",
       },
       about: {
         title: "Who I Am",
@@ -41,7 +41,7 @@ class App extends React.Component {
       },
       project: {
         title: "Most Notable Projects",
-        sub : "Click card to explore more"
+        sub : "Click or tap a card to explore more"
       }
     };
   }
@@ -56,7 +56,7 @@ class App extends React.Component {
             <Navbar.Collapse id="basic-navbar-nav" style={{zIndex: 99, height:"100%", backgroundColor:"#2b2b2b",textAlign:"center"}}>
               <Nav className="ml-auto">
                 <Nav.Link  className="nav-link" href="/project">Explore </Nav.Link>
-                <Nav.Link  className="nav-link" href="/about">Learn</Nav.Link>
+                <Nav.Link  className="nav-link" href="/about">About</Nav.Link>
                 <Nav.Link  className="nav-link" href="/contact">Contact</Nav.Link>
               </Nav>
             </Navbar.Collapse>

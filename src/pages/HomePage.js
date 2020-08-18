@@ -10,9 +10,8 @@ function Homepage (props) {
  
   return(
     <div id="App">
-    <Hero title={props.title} sub={props.sub}/>
+    <Hero title={props.title} sub={props.sub} text={props.text} />
     <Carousel />
-    <Footer/>
     </div>
    
   );

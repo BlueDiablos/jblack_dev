@@ -4,10 +4,11 @@
     height: 100%;
   
   }
-  
+ 
   .container{
     padding-top: 1.25em;
     padding-left: 1.87em;
+    padding-bottom: 2em;
     display: flex;
     align-items: center;
   
@@ -45,9 +46,7 @@
     color: #1b1b1b;
     font-family: Poppins;
   }
-.button-info{
-  display: grid;
-}
+
   @media screen and (max-width: 900px){
     .proj-body{
       font-size: 2vmin;

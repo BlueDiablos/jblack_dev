@@ -128,7 +128,7 @@ class ContactPage extends React.Component {
             )}
           </Form>
         </Content>
-        <Footer />
+      
       </div>
     );
   }

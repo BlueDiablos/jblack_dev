@@ -12,7 +12,7 @@ function Card(props) {
   return (
     <animated.div
       style={style}
-      className="d inline-block j-card"
+      className="j-card"
       onClick={e => props.click(props.item)}
     >
       <img
