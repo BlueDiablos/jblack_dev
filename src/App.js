@@ -37,7 +37,7 @@ class App extends React.Component {
       },
       contact: {
         title: "Reach out to me",
-        sub: "Open for Software Development roles",
+        sub: "",
       },
       project: {
         title: "Most Notable Projects",
